@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Data_Fragment">
+        <attr name="dt_name" format="string"/>
+        <attr name="dt_value" format="string"/>
+        <attr name="tint" format="color"/>
+    </declare-styleable>
+</resources>

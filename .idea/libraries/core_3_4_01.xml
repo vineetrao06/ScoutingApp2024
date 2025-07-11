@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="core-3.4.01">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/scouting_app/APP/libs/core-3.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gearheads_logo_2020"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".PermissionActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mainUI.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".formUI.FormActivity"
+            android:label="Form"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".formUI.FormActivityQualitative"
+            android:label="Form"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QRPopupActivity"
+            android:label="QR"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".formUI.FormSettingsActivity"
+            android:label="Form Settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mainUI.home.SettingsActivity"
+            android:label="Settings"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>

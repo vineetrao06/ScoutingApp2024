@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/COLOR4">
+
+        <!-- TextView for Speaker -->
+
+        <!-- CheckBox for Speaker -->
+
+        <!-- TextView for AMD -->
+
+        <!-- CheckBox for AMD -->
+
+        <!-- TextView for Intake -->
+
+        <!-- TextView for Leave -->
+
+        <!-- CheckBox for Leave -->
+
+        <TextView
+            android:id="@+id/speaker"
+            android:layout_width="124dp"
+            android:layout_height="60dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/speaker"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.228"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.036" />
+
+        <TextView
+            android:id="@+id/amd"
+            android:layout_width="124dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="136dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="Amp"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/speaker"
+            app:layout_constraintStart_toEndOf="@+id/speaker"
+            app:layout_constraintTop_toTopOf="@+id/speaker"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/intake"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="96dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_vertical"
+            android:text="@string/leave"
+            android:textSize="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/missed_counter_auto"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="@+id/wing_counter"
+            app:layout_constraintTop_toBottomOf="@+id/wing_counter"
+            app:layout_constraintVertical_bias="0.381" />
+
+        <CheckBox
+            android:id="@+id/leave_checkbox"
+            android:layout_width="54dp"
+            android:layout_height="47dp"
+            android:buttonTint="@color/white"
+            android:scaleX="3"
+            android:scaleY="3"
+            app:layout_constraintBottom_toBottomOf="@+id/intake"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.247"
+            app:layout_constraintStart_toEndOf="@+id/intake"
+            app:layout_constraintTop_toTopOf="@+id/intake"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <fragment
+            android:id="@+id/midline_counter"
+            android:name="com.team2813.scouting_app.formUI.formFragments.CounterFragment"
+            android:layout_width="93dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="112dp"
+            app:dt_name="Midline"
+            app:layout_constraintBottom_toBottomOf="@+id/wing_counter"
+            app:layout_constraintEnd_toStartOf="@+id/missed"
+            app:layout_constraintStart_toEndOf="@+id/wing_counter"
+            app:layout_constraintTop_toTopOf="@+id/wing_counter"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout="@layout/dt_fragment_counter2" />
+
+        <fragment
+            android:id="@+id/missed_counter_auto"
+            android:name="com.team2813.scouting_app.formUI.formFragments.CounterFragment"
+            android:layout_width="93dp"
+            android:layout_height="128dp"
+            app:layout_constraintBottom_toBottomOf="@+id/midline_counter"
+            app:layout_constraintEnd_toEndOf="@+id/missed"
+            app:layout_constraintStart_toStartOf="@+id/missed"
+            app:layout_constraintTop_toTopOf="@+id/midline_counter"
+            tools:layout="@layout/dt_fragment_counter" />
+
+        <TextView
+            android:id="@+id/missed"
+            android:layout_width="125dp"
+            android:layout_height="93dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="bottom|center_horizontal"
+            android:text="Total Missed"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/leave"
+            app:layout_constraintEnd_toEndOf="@+id/amp_counter_auto"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/amp_counter_auto"
+            app:layout_constraintTop_toTopOf="@+id/leave"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <fragment
+            android:id="@+id/wing_counter"
+            android:name="com.team2813.scouting_app.formUI.formFragments.CounterFragment"
+            android:layout_width="93dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="4dp"
+            app:dt_name="Wing"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/leave"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout="@layout/dt_fragment_counter2" />
+
+        <fragment
+            android:id="@+id/amp_counter_auto"
+            android:name="com.team2813.scouting_app.formUI.formFragments.CounterFragment"
+            android:layout_width="96dp"
+            android:layout_height="131dp"
+            app:layout_constraintBottom_toBottomOf="@+id/num_bots_counter_endgame"
+            app:layout_constraintEnd_toEndOf="@+id/amd"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="@+id/amd"
+            app:layout_constraintTop_toTopOf="@+id/num_bots_counter_endgame"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout="@layout/dt_fragment_counter" />
+
+        <fragment
+            android:id="@+id/num_bots_counter_endgame"
+            android:name="com.team2813.scouting_app.formUI.formFragments.CounterFragment"
+            android:layout_width="87dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/speaker"
+            app:layout_constraintHorizontal_bias="0.378"
+            app:layout_constraintStart_toStartOf="@+id/speaker"
+            app:layout_constraintTop_toTopOf="@+id/speaker"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout="@layout/dt_fragment_counter"></fragment>
+
+        <TextView
+            android:id="@+id/leave"
+            android:layout_width="125dp"
+            android:layout_height="71dp"
+            android:layout_marginBottom="316dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/intake"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.228"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/num_bots_counter_endgame"
+            app:layout_constraintVertical_bias="0.315" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

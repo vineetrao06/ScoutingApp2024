@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/COLOR4">
+
+        <TextView
+            android:id="@+id/climb_text"
+            android:layout_width="196dp"
+            android:layout_height="51dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="left|center_vertical"
+            android:text="Climb"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <TextView
+            android:id="@+id/number_bots_text"
+            android:layout_width="147dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:gravity="left|center_vertical"
+            android:text="Climb?"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/climb_text"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/climb_text"
+            app:layout_constraintTop_toBottomOf="@+id/climb_text" />
+
+
+        <fragment
+            android:id="@+id/buddy_climb_counter"
+            android:name="com.team2813.scouting_app.formUI.formFragments.CounterFragment"
+            android:layout_width="87dp"
+
+            android:layout_height="137dp"
+            app:layout_constraintBottom_toBottomOf="@+id/buddy_climb_text"
+            app:layout_constraintEnd_toStartOf="@+id/spotlight_text"
+            app:layout_constraintHorizontal_bias="0.202"
+            app:layout_constraintStart_toEndOf="@+id/number_bots_text"
+            app:layout_constraintTop_toTopOf="@+id/buddy_climb_text"
+            app:layout_constraintVertical_bias="0.376"
+            tools:layout="@layout/dt_fragment_counter" />
+
+        <fragment
+            android:id="@+id/spotlight_counter"
+            android:name="com.team2813.scouting_app.formUI.formFragments.CounterFragment"
+            android:layout_width="87dp"
+
+            android:layout_height="137dp"
+            app:layout_constraintBottom_toBottomOf="@+id/buddy_climb_counter"
+            app:layout_constraintEnd_toEndOf="@+id/trap_checkbox"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/trap_checkbox"
+            app:layout_constraintTop_toTopOf="@+id/buddy_climb_counter"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout="@layout/dt_fragment_counter" />
+
+        <TextView
+            android:id="@+id/buddy_climb_text"
+            android:layout_width="146dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="68dp"
+            android:gravity="left|center_vertical"
+            android:text="Buddy Climb"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/number_bots_text"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/number_bots_text"
+            app:layout_constraintTop_toBottomOf="@+id/number_bots_text" />
+
+        <TextView
+            android:id="@+id/trap_text"
+            android:layout_width="80dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="60dp"
+            android:gravity="left|center_vertical"
+            android:text="Trap"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/number_bots_text"
+            app:layout_constraintStart_toEndOf="@+id/climb_check"
+            app:layout_constraintTop_toTopOf="@+id/number_bots_text"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <CheckBox
+            android:id="@+id/climb_check"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="8dp"
+            android:buttonTint="@color/white"
+            android:scaleX="2.5"
+            android:scaleY="2.5"
+            app:layout_constraintBottom_toBottomOf="@+id/number_bots_text"
+            app:layout_constraintStart_toEndOf="@+id/climb_text"
+            app:layout_constraintTop_toTopOf="@+id/number_bots_text"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <CheckBox
+            android:id="@+id/trap_checkbox"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="1dp"
+            android:buttonTint="@color/white"
+            android:scaleX="2.5"
+            android:scaleY="2.5"
+            app:layout_constraintBottom_toBottomOf="@+id/trap_text"
+            app:layout_constraintStart_toEndOf="@+id/trap_text"
+            app:layout_constraintTop_toTopOf="@+id/trap_text"
+            app:layout_constraintVertical_bias="0.166" />
+
+        <TextView
+            android:id="@+id/spotlight_text"
+            android:layout_width="113dp"
+            android:layout_height="57dp"
+            android:gravity="left|center_vertical"
+            android:text="Spotlight"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/buddy_climb_text"
+            app:layout_constraintEnd_toEndOf="@+id/trap_text"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/trap_text"
+            app:layout_constraintTop_toTopOf="@+id/buddy_climb_text"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/climb_end_text"
+            android:layout_width="150dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="1dp"
+            android:gravity="left|center_vertical"
+            android:text="Climb End"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/climb_start_text"
+            app:layout_constraintStart_toStartOf="@+id/climb_start_text"
+            app:layout_constraintTop_toBottomOf="@+id/climb_start_text" />
+
+        <TextView
+            android:id="@+id/notes_title"
+            android:layout_width="196dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="52dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="left|center_vertical"
+            android:textCursorDrawable="@drawable/cursor_white"
+            android:text="Notes"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/climb_text"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/climb_text"
+            app:layout_constraintTop_toBottomOf="@+id/climb_end_text" />
+
+        <TextView
+            android:id="@+id/climb_start_text"
+            android:layout_width="150dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="52dp"
+            android:gravity="left|center_vertical"
+            android:text="Climb Start"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/buddy_climb_text"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/buddy_climb_text"
+            app:layout_constraintTop_toBottomOf="@+id/buddy_climb_counter" />
+
+        <EditText
+            android:id="@+id/climb_start_textbox"
+            android:layout_width="177dp"
+            android:layout_height="52dp"
+            android:inputType="textVisiblePassword|textNoSuggestions"
+            android:layout_weight="1"
+            android:textCursorDrawable="@drawable/cursor_white"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/climb_end_text"
+            app:layout_constraintEnd_toEndOf="@+id/spotlight_counter"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/buddy_climb_counter"
+            app:layout_constraintTop_toTopOf="@+id/climb_start_text"
+            app:layout_constraintVertical_bias="0.0"></EditText>
+
+        <EditText
+            android:id="@+id/climb_end_textbox"
+            android:layout_width="177dp"
+            android:layout_height="52dp"
+            android:textCursorDrawable="@drawable/cursor_white"
+            android:inputType="textVisiblePassword|textNoSuggestions"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/climb_end_text"
+            app:layout_constraintEnd_toEndOf="@+id/climb_start_textbox"
+            app:layout_constraintStart_toStartOf="@+id/climb_start_textbox"
+            app:layout_constraintTop_toTopOf="@+id/climb_end_text"></EditText>
+
+        <EditText
+            android:id="@+id/notes_box"
+            android:layout_width="537dp"
+            android:layout_height="215dp"
+            android:background="@drawable/border_white"
+            android:ems="10"
+            android:textCursorDrawable="@drawable/cursor_white"
+            android:gravity="start|top"
+            android:hint="Type Here..."
+            android:inputType="textMultiLine|textVisiblePassword|textNoSuggestions"
+            android:padding="4dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/climb_end_text"
+            app:layout_constraintTop_toBottomOf="@+id/notes_title"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="Test" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

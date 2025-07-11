@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/COLOR4">
+
+        <!-- TextView for Speaker -->
+
+        <!-- CheckBox for Speaker -->
+
+        <!-- TextView for AMD -->
+
+        <!-- CheckBox for AMD -->
+
+        <!-- TextView for Intake -->
+
+        <!-- TextView for Leave -->
+
+        <!-- CheckBox for Leave -->
+
+        <TextView
+            android:id="@+id/teleopTitle"
+            android:layout_width="163dp"
+            android:layout_height="49dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="left"
+            android:text="Performance"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.029"></TextView>
+
+
+        <TextView
+            android:id="@+id/gen_info_text"
+            android:layout_width="98dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            android:gravity="left"
+            android:text="@string/speaker"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/teleopTitle"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/teleopTitle"
+            app:layout_constraintTop_toBottomOf="@+id/teleopTitle" />
+
+        <TextView
+            android:id="@+id/amp2"
+            android:layout_width="98dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="Scored"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/gen_info_text"
+            app:layout_constraintEnd_toEndOf="@+id/speaker_counter1"
+            app:layout_constraintStart_toStartOf="@+id/speaker_counter1"
+            app:layout_constraintTop_toTopOf="@+id/teleopTitle"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/coop_text"
+            android:layout_width="53dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Co-op"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/coop_check"
+            app:layout_constraintEnd_toEndOf="@+id/amp_counter3"
+            app:layout_constraintStart_toStartOf="@+id/amp_counter3"
+            app:layout_constraintTop_toTopOf="@+id/amp_button1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/ground_text"
+            android:layout_width="98dp"
+            android:layout_height="49dp"
+            android:gravity="center"
+            android:text="Ground"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/source_text"
+            app:layout_constraintEnd_toEndOf="@+id/coop_text"
+            app:layout_constraintStart_toStartOf="@+id/coop_text"
+            app:layout_constraintTop_toTopOf="@+id/source_text" />
+
+        <TextView
+            android:id="@+id/source_text"
+            android:layout_width="98dp"
+            android:layout_height="49dp"
+            android:gravity="center"
+            android:text="Source"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/intake"
+            app:layout_constraintEnd_toEndOf="@+id/amp_button1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/amp_button1"
+            app:layout_constraintTop_toBottomOf="@+id/amp_button1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/missed2"
+            android:layout_width="98dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="48dp"
+            android:gravity="center"
+            android:text="Missed"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/amp2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/amp2"
+            app:layout_constraintTop_toTopOf="@+id/amp2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/amp"
+            android:layout_width="98dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="35dp"
+            android:gravity="left"
+            android:text="Amp"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/gen_info_text"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/gen_info_text"
+            app:layout_constraintTop_toBottomOf="@+id/speaker_counter1" />
+
+        <TextView
+            android:id="@+id/intake"
+            android:layout_width="100dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="96dp"
+            android:gravity="left"
+            android:text="Intake"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/amp_button"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/amp_button"
+            app:layout_constraintTop_toBottomOf="@+id/amp_button" />
+
+        <CheckBox
+            android:id="@+id/source_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:scaleX="3"
+            android:scaleY="3"
+            app:layout_constraintBottom_toBottomOf="@+id/intake"
+            app:layout_constraintEnd_toEndOf="@+id/source_text"
+            app:layout_constraintHorizontal_bias="0.357"
+            app:layout_constraintStart_toStartOf="@+id/amp_button1"
+            app:layout_constraintTop_toTopOf="@+id/intake"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <CheckBox
+            android:id="@+id/ground_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:scaleX="3"
+            android:scaleY="3"
+            app:layout_constraintBottom_toBottomOf="@+id/source_check"
+            app:layout_constraintEnd_toEndOf="@+id/coop_check"
+            app:layout_constraintStart_toStartOf="@+id/coop_check"
+            app:layout_constraintTop_toTopOf="@+id/source_check" />
+
+        <CheckBox
+            android:id="@+id/coop_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="57dp"
+            android:layout_marginBottom="48dp"
+            android:buttonTint="@color/white"
+            android:scaleX="3"
+            android:scaleY="3"
+            app:layout_constraintBottom_toBottomOf="@+id/amp_button1"
+            app:layout_constraintEnd_toEndOf="@+id/coop_text"
+            app:layout_constraintStart_toStartOf="@+id/coop_text"
+            app:layout_constraintTop_toTopOf="@+id/amp_button1" />
+
+
+        <TextView
+            android:id="@+id/herd"
+            android:layout_width="101dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="44dp"
+            android:gravity="left"
+            android:text="Herd"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/intake"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/intake"
+            app:layout_constraintTop_toBottomOf="@+id/intake" />
+
+        <TextView
+            android:id="@+id/defense_title"
+            android:layout_width="192dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="left|bottom"
+            android:text="Defense"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/teleopTitle"
+            app:layout_constraintTop_toBottomOf="@+id/herd_counter"
+            app:layout_constraintVertical_bias="0.215" />
+
+        <Spinner
+            android:id="@+id/defense_spinner"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="177dp"
+            android:layout_height="52dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="@+id/defense_title"
+            app:layout_constraintEnd_toEndOf="@+id/herd_counter"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/herd_counter"
+            app:layout_constraintTop_toTopOf="@+id/defense_title"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/amp_button"
+            android:layout_width="147dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="28dp"
+            android:gravity="left"
+            android:text="Amp Button"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/amp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/amp"
+            app:layout_constraintTop_toBottomOf="@+id/amp_counter1" />
+
+        <fragment
+            android:id="@+id/speaker_counter1"
+            android:name="com.team2813.scouting_app.formUI.formFragments.CounterFragment"
+            android:layout_width="80dp"
+            android:layout_height="139dp"
+            android:layout_marginStart="104dp"
+            app:layout_constraintBottom_toBottomOf="@+id/gen_info_text"
+            app:layout_constraintStart_toEndOf="@+id/gen_info_text"
+            app:layout_constraintTop_toTopOf="@+id/gen_info_text"
+            app:layout_constraintVertical_bias="0.444"
+            tools:layout="@layout/dt_fragment_counter"></fragment>
+
+        <fragment
+            android:id="@+id/speaker_counter3"
+            android:name="com.team2813.scouting_app.formUI.formFragments.CounterFragment"
+            android:layout_width="87dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintBottom_toBottomOf="@+id/speaker_counter1"
+            app:layout_constraintEnd_toEndOf="@+id/missed2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/missed2"
+            app:layout_constraintTop_toTopOf="@+id/speaker_counter1"
+            tools:layout="@layout/dt_fragment_counter"></fragment>
+
+        <fragment
+            android:id="@+id/amp_counter3"
+            android:name="com.team2813.scouting_app.formUI.formFragments.CounterFragment"
+            android:layout_width="87dp"
+            android:layout_height="137dp"
+            app:layout_constraintBottom_toTopOf="@+id/amp_button1"
+            app:layout_constraintEnd_toEndOf="@+id/speaker_counter3"
+            app:layout_constraintStart_toStartOf="@+id/speaker_counter3"
+            app:layout_constraintTop_toTopOf="@+id/amp_counter1"
+            tools:layout="@layout/dt_fragment_counter"></fragment>
+
+        <fragment
+            android:id="@+id/amp_button1"
+            android:name="com.team2813.scouting_app.formUI.formFragments.CounterFragment"
+            android:layout_width="87dp"
+            android:layout_height="137dp"
+            android:layout_marginStart="1dp"
+            app:layout_constraintEnd_toEndOf="@+id/amp_counter1"
+            app:layout_constraintStart_toStartOf="@+id/amp_counter1"
+            app:layout_constraintTop_toBottomOf="@+id/amp_counter1"
+            tools:layout="@layout/dt_fragment_counter"></fragment>
+
+        <fragment
+            android:id="@+id/herd_counter"
+            android:name="com.team2813.scouting_app.formUI.formFragments.CounterFragment"
+            android:layout_width="87dp"
+            android:layout_height="137dp"
+            app:layout_constraintBottom_toBottomOf="@+id/herd"
+            app:layout_constraintEnd_toEndOf="@+id/source_check"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/amp_button1"
+            app:layout_constraintTop_toTopOf="@+id/herd"
+            app:layout_constraintVertical_bias="0.458"
+            tools:layout="@layout/dt_fragment_counter"></fragment>
+
+        <fragment
+            android:id="@+id/amp_counter1"
+            android:name="com.team2813.scouting_app.formUI.formFragments.CounterFragment"
+            android:layout_width="87dp"
+            android:layout_height="137dp"
+            app:layout_constraintEnd_toEndOf="@+id/speaker_counter1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/speaker_counter1"
+            app:layout_constraintTop_toBottomOf="@+id/speaker_counter1"
+            tools:layout="@layout/dt_fragment_counter"></fragment>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

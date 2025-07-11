@@ -1,0 +1,93 @@
+{
+  "info": {
+    "date": "Thu Mar 12 22:07:06 CDT 2020",
+    "model": "KFMUWI",
+    "team_number": "2813",
+    "match_number": "303",
+    "alliance_color": "blue",
+    "scouter_name": "Error",
+    "competition_name": "Error"
+  },
+  "formItems": [
+    {
+      "type": "counter",
+      "name": "*Upper Port*",
+      "value": "0"
+    },
+    {
+      "type": "counter",
+      "name": "*Lower Port*",
+      "value": "0"
+    },
+    {
+      "type": "counter",
+      "name": "*Missed*",
+      "value": "0"
+    },
+    {
+      "type": "counter",
+      "name": "Upper Port",
+      "value": "0"
+    },
+    {
+      "type": "counter",
+      "name": "Lower Port",
+      "value": "0"
+    },
+    {
+      "type": "counter",
+      "name": "Missed",
+      "value": "0"
+    },
+    {
+      "type": "toggle",
+      "name": "Rotation Control",
+      "value": "f"
+    },
+    {
+      "type": "toggle",
+      "name": "Position Control",
+      "value": "f"
+    },
+    {
+      "type": "text",
+      "name": "Notes",
+      "value": " "
+    },
+    {
+      "type": "toggle",
+      "name": "Park",
+      "value": "f"
+    },
+    {
+      "type": "toggle",
+      "name": "Climb",
+      "value": "t"
+    },
+    {
+      "type": "toggle",
+      "name": "Double Climb",
+      "value": "t"
+    },
+    {
+      "type": "toggle",
+      "name": "Triple Climb",
+      "value": "f"
+    },
+    {
+      "type": "toggle",
+      "name": "Left Climb",
+      "value": "t"
+    },
+    {
+      "type": "toggle",
+      "name": "Right Climb",
+      "value": "f"
+    },
+    {
+      "type": "text",
+      "name": "Final Notes",
+      "value": " "
+    }
+  ]
+}

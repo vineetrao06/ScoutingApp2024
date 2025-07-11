@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/COLOR4"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".formUI.FormActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/COLOR4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <TextView
+        android:id="@+id/gen_info_text"
+        android:layout_width="245dp"
+        android:layout_height="43dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="left"
+        android:text="General Information"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="245dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="left"
+        android:text="Notes on Offense"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/teamNum"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/teamNum"
+        app:layout_constraintTop_toBottomOf="@+id/teamNum" />
+
+    <EditText
+        android:id="@+id/notes_box"
+        android:layout_width="538dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Type Here..."
+        android:inputType="textMultiLine|textVisiblePassword|textNoSuggestions"
+        android:padding="4dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textCursorDrawable="@drawable/cursor_white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="245dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="left"
+        android:text="Notes on Defense"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/notes_box"
+        app:layout_constraintTop_toBottomOf="@+id/notes_box" />
+
+    <EditText
+        android:id="@+id/notes_box2"
+        android:layout_width="533dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Type Here..."
+        android:inputType="textMultiLine|textVisiblePassword|textNoSuggestions"
+        android:padding="4dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textCursorDrawable="@drawable/cursor_white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/notes_box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/notes_box"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="330dp"
+        android:layout_height="67dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textVisiblePassword|textNoSuggestions"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+        android:textCursorDrawable="@drawable/cursor_white"
+        app:backgroundTint="@color/white"
+        app:dt_name="Scouter Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/gen_info_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gen_info_text"
+        app:layout_constraintTop_toBottomOf="@+id/gen_info_text"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <EditText
+        android:id="@+id/matchNum"
+        android:inputType="textVisiblePassword|textNoSuggestions"
+        android:layout_width="330dp"
+        android:textCursorDrawable="@drawable/cursor_white"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="416dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Match Number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:backgroundTint="@color/white"
+
+        app:dt_name="Match Number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/teamNum"
+        android:layout_width="330dp"
+        android:layout_height="67dp"
+        android:textCursorDrawable="@drawable/cursor_white"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Team Number"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/white"
+        app:dt_name="Team Number"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/matchNum"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/matchNum"
+        app:layout_constraintTop_toBottomOf="@+id/matchNum"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/formPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+{
+  "layoutRows": 3,
+  "formItems": [
+    {
+      "type": "counter",
+      "name": "Hatches Placed",
+      "row": 1
+    },{
+      "type": "counter",
+      "name": "D Placed",
+      "row": 1
+    },{
+      "type": "text",
+      "name": "lmao",
+      "row": 2
+    },{
+      "type": "toggle",
+      "name": "lma1o",
+      "row": 3
+    },{
+      "type": "toggle",
+      "name": "lmao11",
+      "row": 3
+    },{
+      "type": "toggle",
+      "name": "lmao111",
+      "row": 3
+    },{
+      "type": "toggle",
+      "name": "lmao111",
+      "row": 3
+    },{
+      "type": "toggle",
+      "name": "lmao111",
+      "row": 3
+    },{
+      "type": "toggle",
+      "name": "lmao111",
+      "row": 3
+    }
+  ]
+}

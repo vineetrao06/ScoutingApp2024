@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ScoutingApp2024.iml" filepath="$PROJECT_DIR$/.idea/ScoutingApp2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ScoutingDataUtility/ScoutingDataUtility.iml" filepath="$PROJECT_DIR$/ScoutingDataUtility/ScoutingDataUtility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scouting_app/APP/SRC/androidTest/androidTest.iml" filepath="$PROJECT_DIR$/scouting_app/APP/SRC/androidTest/androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scouting_app/APP - Copy/SRC/androidTest/androidTest1.iml" filepath="$PROJECT_DIR$/scouting_app/APP - Copy/SRC/androidTest/androidTest1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scouting_app/APP - Copy/SRC/main/main.iml" filepath="$PROJECT_DIR$/scouting_app/APP - Copy/SRC/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scouting_app/APP/SRC/main/main1.iml" filepath="$PROJECT_DIR$/scouting_app/APP/SRC/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scouting_app/APP/SRC/test/test.iml" filepath="$PROJECT_DIR$/scouting_app/APP/SRC/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scouting_app/APP - Copy/SRC/test/test1.iml" filepath="$PROJECT_DIR$/scouting_app/APP - Copy/SRC/test/test1.iml" />
+    </modules>
+  </component>
+</project>

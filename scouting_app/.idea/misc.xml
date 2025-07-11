@@ -1,0 +1,57 @@
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/shobh/ScoutingApp2023/scouting_app/APP/SRC/main/res/drawable/big_check.xml" value="0.17" />
+        <entry key="..\:/Users/shobh/ScoutingApp2023/scouting_app/APP/SRC/main/res/layout-long/fm_fragment_endgame.xml" value="0.205859375" />
+        <entry key="..\:/Users/shobh/ScoutingApp2023/scouting_app/APP/SRC/main/res/layout-long/fm_fragment_teleop.xml" value="0.1" />
+        <entry key="..\:/Users/shobh/ScoutingApp2023/scouting_app/APP/SRC/main/res/layout/dt_fragment_counter.xml" value="0.264" />
+        <entry key="..\:/Users/shobh/ScoutingApp2023/scouting_app/APP/SRC/main/res/layout/dt_fragment_text.xml" value="0.1296875" />
+        <entry key="..\:/Users/shobh/ScoutingApp2023/scouting_app/APP/SRC/main/res/layout/dt_fragment_toggle.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/shobh/ScoutingApp2023/scouting_app/APP/SRC/main/res/layout/fm_activity_form.xml" value="0.152" />
+        <entry key="..\:/Users/shobh/ScoutingApp2023/scouting_app/APP/SRC/main/res/layout/fm_fragment_autonomous - Copy.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/shobh/ScoutingApp2023/scouting_app/APP/SRC/main/res/layout/fm_fragment_autonomous.xml" value="0.1" />
+        <entry key="..\:/Users/shobh/ScoutingApp2023/scouting_app/APP/SRC/main/res/layout/fm_fragment_endgame.xml" value="0.1" />
+        <entry key="..\:/Users/shobh/ScoutingApp2023/scouting_app/APP/SRC/main/res/layout/fm_fragment_teleop.xml" value="0.136" />
+        <entry key="..\:/Users/shobh/ScoutingApp2023/scouting_app/APP/SRC/main/res/layout/fragment_intro.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/shobh/ScoutingApp2023/scouting_app/APP/SRC/main/res/layout/intro.xml" value="0.2734375" />
+        <entry key="..\:/Users/shobh/ScoutingApp2023/scouting_app/APP/SRC/main/res/layout/list_item.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/shobh/ScoutingApp2023/scouting_app/APP/SRC/main/res/layout/mn_fragment_home.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/shobh/ScoutingApp2023/scouting_app/APP/SRC/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14" />
+        <entry key="..\:/Users/shobh/ScoutingApp2023/scouting_app/APP/SRC/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.14" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/drawable-anydpi-v24/ic_history.xml" value="0.159" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/drawable/alliance_color.xml" value="0.159" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout-long/fm_fragment_autonomous.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout/activity_permission.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout/dt_fragment_counter.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout/dt_fragment_text.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout/dt_fragment_toggle.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout/fm_activity_form.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout/fm_activity_form_settings.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout/fm_fragment_autonomous.xml" value="0.264" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout/fm_fragment_endgame.xml" value="0.136" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout/fm_fragment_teleop.xml" value="0.1" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout/mn_activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout/mn_activity_settings.xml" value="0.19322990126939352" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout/mn_fragment_camera.xml" value="0.1" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout/mn_fragment_history.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout/mn_fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout/mn_row_saved_form.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout/qr_activity_popup.xml" value="0.1" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/layout/qr_fragment_qr.xml" value="0.1" />
+        <entry key="..\:/Users/shobh/scouting-app/scouting_app/APP/SRC/main/res/menu/menu_form.xml" value="0.22135416666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
